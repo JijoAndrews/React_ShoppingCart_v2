@@ -34,7 +34,7 @@ export const CardComponent = ({data}) => {
 
         })
         
-        productdata.productdata=[...values];
+        // productdata.productdata=[...values];
         setcardCount(values);
     }
     
