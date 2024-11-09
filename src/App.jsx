@@ -1,12 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { HomeComponent } from './Components/HomeComponent'
-
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import carddataLoader from "./loaders/carddataLoader"
-import productdata from './loaders/curcartdata'
 
 
 const router=createBrowserRouter([
@@ -29,7 +25,6 @@ const router=createBrowserRouter([
 )
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <RouterProvider router={router} future={{v7_startTransition: true,}} />

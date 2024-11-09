@@ -27,6 +27,7 @@ export const HomeComponent = () => {
 
     const productdata=useLoaderData();
     const spliteddata=[...productdata.products];
+    console.log("check:",spliteddata);
 
     useEffect(()=>{},[cardcount])
 
