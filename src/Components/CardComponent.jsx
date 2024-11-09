@@ -1,12 +1,11 @@
 import React, { useContext } from 'react'
 import { contextdata } from './HomeComponent'
 
-import productdata from '../loaders/curcartdata'
-
 
 
 export const CardComponent = ({data}) => {
 
+    let tempval={};
     const {cardcount,setcardCount}=useContext(contextdata)
     
     function remvebtnstatus(id)
@@ -97,7 +96,7 @@ export const CardComponent = ({data}) => {
             )
             
     }
-
+    
     const cards=data.map((e,index)=>{return cardsetup(e)})
     
     return(
