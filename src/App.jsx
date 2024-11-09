@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import { HomeComponent } from './Components/HomeComponent'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import carddataLoader from "./loaders/carddataLoader"
+import carddataLoader from './loaders/carddataLoader'
 
 
 const router=createBrowserRouter([

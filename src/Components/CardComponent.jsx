@@ -1,8 +1,6 @@
 import React, { useContext } from 'react'
 import { contextdata } from './HomeComponent'
 
-
-
 export const CardComponent = ({data}) => {
 
     let tempval={};
