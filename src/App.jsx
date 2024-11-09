@@ -2,15 +2,39 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { HomeComponent } from './Components/HomeComponent'
+
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import carddataLoader from "./loaders/carddataLoader"
+import productdata from './loaders/curcartdata'
+
+
+const router=createBrowserRouter([
+  {
+    path:"/",
+    element: <HomeComponent/>,
+    loader: carddataLoader
+
+  }
+],
+ { future: {
+    v7_fetcherPersist: true,
+    v7_normalizeFormMethod: true,
+    v7_partialHydration: true,
+    v7_skipActionStatusRevalidation: true,
+    v7_relativeSplatPath: true,
+    v7_skipActionErrorRevalidation: true,
+  }
+}
+)
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h1>Vite + React</h1>
-    </>
+    <RouterProvider router={router} future={{v7_startTransition: true,}} />
   )
 }
+
 
 export default App

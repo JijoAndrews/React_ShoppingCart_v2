@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -11,4 +11,341 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+.d-flex{
+  justify-content: center;
+}
+
+.col{
+  min-width: 300px;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.topsection
+{
+  margin: auto;
+  width:100%;
+}
+
+.headersection
+{
+  margin: auto;
+  width:100%;
+}
+
+.card{
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardsection
+{
+  display: col;
+}
+
+.cardapperance
+{
+ top: 0.5rem; 
+ right: 0.5rem;
+}
+
+.cardsize{
+  padding:0px;
+}
+.imageclass
+{
+  min-width: 150px;
+  min-height: 150px;
+  max-width: fit-content;
+  max-height:fit-content; 
+  display: flex;
+  padding: 10px;
+}
+
+.card-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countext{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  text-wrap: nowrap;
+  margin: 0px;
+}
+
+.titletext{
+
+  font-size: small;
+  font-weight: bolder;
+}
+
+.footerclass{
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.removebtntrue{
+  display: flex;
+  padding: 10px;
+}
+
+.removebtnfalse{
+ display: none;
+}
+
+.removebtnelement{
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  padding:10px;
+  margin: 0px;
+  border: 0px;
+}
+
+
+.shopcontainer
+{
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
+
+.mycartcontainer
+{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(61, 61, 61);
+  padding: 5px;
+  margin: 5px;
+}
+
+
+
+
+.iconbox{
+  display: block;
+  justify-content: center;
+  background-color: azure;
+  padding: 10px;
+  margin: 10px;
+  
+  width: 300px;
+  height: 300px;
+}
+
+.iconcontainer
+{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.testimage{
+  display: flex;
+  justify-content: center;
+}
+
+.testcartimage{
+
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.example {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.example img {
+  width: 30vw;
+  height: 30vw;
+}
+
+.example-cover img {
+  object-fit: cover;
+}
+
+.example-contain img {
+  object-fit: contain;
+}
+
+
+.headtext{
+  display: grid;
+  justify-content: center;
+  justify-items: flex-start;
+  padding: 5px;
+  color: aliceblue;
+}
+
+.headingtext{
+    text-align: start;    
+    text-wrap: wrap;
+ }
+ 
+
+.countset
+{
+  display: grid;
+  background-color: rgba(87, 87, 87, 0.63);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.countbox
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.countcontrol
+{
+  display: flex;
+  align-items: center;
+}
+
+.cusbtn{
+  width: 40px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.spacer{
+  margin: 5px;
+  padding: 5px;
+}
+
+.alingment{
+  margin: 5px;
+  padding: 5px;
+}
+.ptext
+{
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  padding: 10px;
+  margin: 0%;
+}
+
+.mytotal
+{
+  padding: 10px;
+}
+.displayspacetext
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.discriptext{
+
+  font-size: small;
+  text-align: left;
+  color: aqua;
+}
+
+.clickbutton {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  border-radius: 8px;
+  cursor: pointer;
+ 
+}
+
+h4{
+  text-wrap: none;
+}
+
+@media screen and (max-width:800px)
+{
+
+  .mycartcontainer
+{
+  display: grid;
+  justify-content: center;
+  background-color: rgb(61, 61, 61);
+  padding: 5px;
+  margin: 5px;
+  justify-items: center;
+}
+
+.imageclass{
+  padding: 0px;
+}
+
+  .iconcontainer
+  {
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+    /* width: fit-content; */
+    
+  }
+  .countset
+  {
+    display: grid;
+    justify-content: center;
+    background-color: rgba(87, 87, 87, 0.63);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+    width: fit-content;
+  }
+  
+  .headtext{
+    justify-items: normal;
+  }
+
+  .headingtext{
+    text-align: center;    
+    text-wrap: wrap;
+ }
+  
+ .discriptext{
+
+  font-size: small;
+  text-align: center;
+  color: aqua;
+}
+  .example img {
+   min-width: 200px;
+   min-height: 250px;
+  }
+  
+  .example-cover img {
+    object-fit: contain;
+  }
+  
+  .example-contain img {
+    object-fit: fill;
+
+  }
+  .countext{
+    text-wrap: nowrap;
+  }
 }
