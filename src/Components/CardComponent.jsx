@@ -3,7 +3,6 @@ import { contextdata } from './HomeComponent'
 
 export const CardComponent = ({data}) => {
 
-    let tempval={};
     const {cardcount,setcardCount}=useContext(contextdata)
     
     function remvebtnstatus(id)
@@ -33,9 +32,7 @@ export const CardComponent = ({data}) => {
             }
 
         })
-        
-        // productdata.productdata=[...values];
-        setcardCount(values);
+            setcardCount(values);
     }
     
     const removeelementtocart=(id)=>{

@@ -31,7 +31,7 @@ const router=createBrowserRouter([
 function App() {
 
   return (
-    <RouterProvider router={router} future={{v7_startTransition: true,}} />
+    <RouterProvider router={router} future={{v7_startTransition: true,} } />
   )
 }
 

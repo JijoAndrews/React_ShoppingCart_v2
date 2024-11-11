@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 export const NavbarComponent = () => {
 
-    const {cardcount,setcardCount}=useContext(contextdata)
+    const {cardcount}=useContext(contextdata)
 
     function totalcountstatus()
     {

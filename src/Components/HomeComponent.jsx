@@ -7,9 +7,11 @@ import { Footercomponent } from './Footercomponent';
 
 export const contextdata =createContext();
 
-
 export const HomeComponent = () => {
+    const productdata=useLoaderData();
+    const spliteddata=[...productdata.products];
 
+    
     const[cardcount,setcardCount]=useState([
         {id:1,count:0,removebtn:false},
         {id:2,count:0,removebtn:false},
@@ -22,14 +24,10 @@ export const HomeComponent = () => {
         {id:9,count:0,removebtn:false},
         {id:10,count:0,removebtn:false},
     ])
+    useEffect(()=>{},[cardcount])
 
-
-
-    const productdata=useLoaderData();
-    const spliteddata=[...productdata.products];
     console.log("check:",spliteddata);
 
-    useEffect(()=>{},[cardcount])
 
   return (
     <div className='shopcontainer'>
